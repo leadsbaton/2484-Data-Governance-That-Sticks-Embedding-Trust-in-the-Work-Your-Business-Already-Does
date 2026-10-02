@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Building AI's Data Core: Architecting
+Scalable Data Foundations for AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-sans">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Banner Images -->
+  <div class="max-w-5xl mx-auto mt-6">
+    <img src="assets/images/image142a.png" alt="Simpplr Banner" class="w-full">
+  </div>
+  <div class="max-w-5xl mx-auto mt-6">
+    <img src="assets/images/image142b.png" alt="Webinar Banner" class="w-full">
+  </div>
+
+  <!-- Title + Register -->
+  <div class="max-w-5xl mx-auto mt-12 text-center">
+    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug mb-8">
+      Building AI's Data Core: Architecting
+Scalable Data Foundations for AI
+    </h1>
+    <button id="registerBtn"
+      class="mb-12 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded font-semibold shadow">
+      REGISTER NOW
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="max-w-5xl mx-auto text-gray-800 space-y-4 px-4">
+
+    <p>
+      The bottleneck in AI has shifted downstream. Data structure, access, and orchestration across complex environments now determine what can scale.
+    </p>
+
+    <p>
+      As AI systems expand in scope and complexity, gaps in data flow, inconsistent access patterns, and brittle pipeline design are becoming critical failure points. These issues surface most clearly under production workloads, where latency, reliability, and context continuity are non-negotiable.
+    </p>
+
+    <p class="font-semibold">
+      This roundtable webinar explores how technical leaders are addressing these constraints by engineering a scalable foundation built to support modern AI workloads in production environments.
+    </p>
+
+    <p class="font-semibold">You'll Learn How To:</p>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Spot where AI systems break at scale in data flow, access, and latency</li>
+      <li>Understand why traditional pipelines fail for generative and agentic systems</li>
+      <li>Define what production AI architectures require</li>
+      <li>Improve orchestration and reliability at the system level</li>
+    </ul>
+
+    <p>
+      <span id="registerText" class="text-red-600 font-bold cursor-pointer hover:underline">
+        Register Now
+      </span>
+      to attend the webinar Building AI's Data Core: Architecting Scalable Data Foundations for AI. Don't miss this live event on <span class="font-semibold">Thursday, October 8, 11 AM PT / 2 PM ET.</span>
+    </p>
+
+
+  </div>
+  <!-- Speakers & Moderator Section -->
+  <div class="max-w-5xl mx-auto mt-16 px-4">
+
+    <!-- 4 Column Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
+
+      <!-- Speaker 1 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8">Speakers</h3>
+
+        <img src="assets/images/image142c.png" alt="Amar Srivastava"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-bold">
+          Amar Srivastava
+        </p>
+        <p class="text-sm text-gray-600">Community of<br>Practice Director<br>Informatica from<br>Salesforce</p>
+      </div>
+
+      <!-- Speaker 2 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8 invisible">.</h3>
+
+        <img src="assets/images/image142d.png" alt="Vikram Kulkarni"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-bold">
+          Vikram Kulkarni
+        </p>
+        <p class="text-sm text-gray-600">Area Vice<br>President<br>Perforce Delphix</p>
+      </div>
+
+      <!-- 3 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8 invisible">.</h3>
+
+        <img src="assets/images/image142e.png" alt="Ebrahim Alareqi"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-bold">
+          Ebrahim Alareqi
+        </p>
+        <p class="text-sm text-gray-600">Principal Machine<br>Learning Engineer<br>incorta</p>
+      </div>
+
+      <!-- 4 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8 invisible">.</h3>
+
+        <img src="assets/images/image142f.png" alt="Steve Richardson"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-bold">
+          Steve Richardson
+        </p>
+        <p class="text-sm text-gray-600">Senior Cloud<br>Solutions Architect<br>NetApp Instaclustr</p>
+      </div>
+
+
+      <!-- Moderator -->
+      <div>
+        <h3 class="text-red-600 font-bold uppercase mb-8">Moderator</h3>
+
+        <img src="assets/images/image142g.png" alt="Stephen Faig"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-bold">Stephen Faig</p>
+        <p class="text-sm text-gray-600">Research Director<br>Unisphere Research<br>& DBTA</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer" class="mt-12"></div>
+  <!-- JS -->
+  <script>
+    // Load navbar and footer
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+
+    // Register actions
+    function goRegister() {
+      window.open('register.html', '_blank');
+    }
+
+    document.getElementById('registerBtn').addEventListener('click', goRegister);
+    document.getElementById('registerText').addEventListener('click', goRegister);
+  </script>
+
+</body>
+
+</html>
